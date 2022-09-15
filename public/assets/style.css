@@ -1,0 +1,324 @@
+/* BTN css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+ul {
+    /* list-style-image: url('/assets/images/check.png');   */
+}
+
+.btn-primary {
+    border: 1px solid #009432;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    border: 1px solid #009432;
+    color: #009432;
+}
+
+/* ALL CSS CODES */
+
+/* navbar css codes */
+nav {
+    display: flex;
+    padding: 10px 30px;
+    color: black;
+    background: #009432;
+    position: absolute;
+}
+
+.navbar-kits {
+    display: flex;
+}
+
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    color: #05e650 !important;
+}
+
+nav .btn-groups {
+    text-align: right;
+}
+
+.btn-groups .login,
+.benefits .login {
+    color: #009432;
+    background: white;
+    border: #009432 solid 1px;
+}
+
+/* count css codes */
+.count {
+    width: 100%;
+    height: 500px;
+    color: white;
+    text-align: left;
+    background-image: url('/assets/images/hero.png');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 60px;
+}
+
+.count .count-text h1 {
+    font-size: 3.5rem;
+    color: white;
+
+}
+
+.content {
+    padding: 80px 100px;
+}
+
+/* benefits css codes*/
+.benefits {
+    background: #faf7f7;
+    /* color: white; */
+}
+
+@media only screen and (max-width: 600px) {
+    .count {
+        background-size: contain;
+        padding: 30px ;
+        height: unset;
+    }
+
+
+    .count .count-text h1 {
+        font-size: 2.0rem;
+    }
+
+    .content {
+        padding: 50px 30px;
+    }
+
+    .detail-img{
+        margin: 40px 1px;
+    }
+}
+
+
+/* footer css codes */
+footer {
+    background: #009432;
+    padding: 40px 20px;
+    color: white;
+    justify-content: space-between;
+}
+
+.footer-tag a {
+    color: white;
+}
+
+footer .links {
+    display: flex;
+}
+
+footer .links .fa-twitter,
+footer .links .fa-facebook {
+    color: #6a6a6a;
+}
+
+footer .links .fa-instagram {
+    color: #6a6a6a;
+}
+
+footer .links .fab {
+    font-size: 30px;
+    background: white;
+    padding: 5px;
+    border-radius: 7px;
+    margin: 3px;
+}
+
+
+/* SIGN UP, SIGN IN AND SIGN EMAIL PAGES CSS CODES */
+.sign .col-md-6 {
+    text-align: center;
+    justify-items: center;
+}
+
+.sign .card {
+    border: none;
+    margin-top: 30px;
+    /* padding: 100px; */
+}
+
+.sign .card .btn-groups {
+    margin: 30px;
+}
+
+.form-control {
+    /* margin: 30px 0px; */
+}
+
+.btn-submit {
+    background: #009432 !important;
+    color: white !important;
+}
+
+.svg {
+    background: rgb(240, 235, 226);
+}
+
+/* vote animation css codes */
+
+svg {
+    width: 600px;
+}
+
+#big-vote {
+    animation: vote 2s alternate-reverse infinite;
+    transform-origin: top;
+}
+
+#woman-vote {
+    animation: woman 3s alternate infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#leaves {
+    animation: leaves 3s alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#balls {
+    animation: ball 7s alternate infinite;
+    transform-origin: left;
+}
+
+#sun {
+    animation: sun 4s ease-in-out infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#head {
+    animation: head 7s alternate infinite;
+    transform-origin: bottom;
+    z-index: -1000;
+}
+
+/* animations css codes */
+@keyframes vote {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(-2deg);
+    }
+}
+
+@keyframes head {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(7deg);
+    }
+}
+
+@keyframes sun {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes woman {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(5deg);
+    }
+}
+
+@keyframes leaves {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(30deg);
+    }
+}
+
+@keyframes ball {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(10deg);
+    }
+}
+
+
+/* DASHBOARD CSS CODES */
+.dashboard {
+    height: 100%;
+}
+
+.dashboard .col-md-3 {
+    background: #0be881;
+    color: white;
+}
+
+.dashboard .col-md-3 .container a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+}
+
+.dashboard .header {
+    padding: 10px 0;
+}
+
+.dashboard .col-md-3 .header {
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.dashboard .col-md-9 .header {
+    border-bottom: 1px solid grey;
+}
+
+.dashboard .col-md-9 span {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.dashboard img {
+    width: 100%;
+}
+
+/* MEDIA QUERIES CSS CODES */
+@media (max-width:991px) {
+    .image {
+        background-repeat: no-repeat;
+    }
+
+    svg {
+        width: 300px;
+    }
+}
+
+@media (max-width:768px) {
+    img {
+        width: 300px;
+    }
+}
